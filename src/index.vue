@@ -17,7 +17,7 @@
       const self = this
 			this.$nextTick(function () {
         console.log('config', self.config)
-        console.log('getEditor', self.getEditor)
+        console.log('getUE', self.getUE)
        let id = new Date().getTime().toString()
        const editor = UE.getEditor(id, self.config)
        self.$refs.editor.id = id
