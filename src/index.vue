@@ -15,6 +15,8 @@
 		props: ['config', 'getEditor', 'composition'],
 		mounted: function () {
 			this.$nextTick(function () {
+        console.log('config', this.config)
+        console.log('getEditor', this.getEditor)
        let id = new Date().getTime().toString()
        this.$refs.editor.id = id
        this.editor = UE.getEditor(id, this.config)
