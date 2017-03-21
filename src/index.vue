@@ -12,7 +12,7 @@
 
 	export default {
 		name: 'vue-ueditor',
-		props: ['config', 'getEditor', 'composition'],
+		props: ['config', 'getUE', 'composition'],
 		mounted: function () {
       const self = this
 			this.$nextTick(function () {
@@ -21,7 +21,7 @@
        let id = new Date().getTime().toString()
        const editor = UE.getEditor(id, self.config)
        self.$refs.editor.id = id
-			 self.getEditor(editor)
+			 self.getUE(editor)
 
        editor.ready(function () {
          editor.setContent(self.composition)
