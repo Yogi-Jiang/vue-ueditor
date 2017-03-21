@@ -14,23 +14,24 @@
 		name: 'vue-ueditor',
 		props: ['config', 'getEditor', 'composition'],
 		mounted: function () {
+      const self = this
 			this.$nextTick(function () {
-        console.log('config', this.config)
-        console.log('getEditor', this.getEditor)
+        console.log('config', self.config)
+        console.log('getEditor', self.getEditor)
        let id = new Date().getTime().toString()
-       this.$refs.editor.id = id
-       this.editor = UE.getEditor(id, this.config)
-			 this.getEditor(this.editor)
+       const editor = UE.getEditor(id, self.config)
+       self.$refs.editor.id = id
+			 self.getEditor(editor)
 
-       this.editor.ready(function () {
-         this.editor.setContent(this.composition)
+       editor.ready(function () {
+         editor.setContent(self.composition)
 
-         this.editor.addListener('contentChange', function () {
-           this.$emit('input', this.editor.getContent())
-         }.bind(this))
+         editor.addListener('contentChange', function () {
+           self.$emit('input', self.editor.getContent())
+         })
 
-         this.$emit('ready', this.editor)
-       }.bind(this))
+         self.$emit('ready', this.editor)
+       })
      })
 		}
 	}
