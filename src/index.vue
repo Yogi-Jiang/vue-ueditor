@@ -27,10 +27,10 @@
          editor.setContent(self.composition)
 
          editor.addListener('contentChange', function () {
-           self.$emit('input', self.editor.getContent())
+           self.$emit('input', editor.getContent())
          })
 
-         self.$emit('ready', this.editor)
+         self.$emit('ready', editor)
        })
      })
 		}
