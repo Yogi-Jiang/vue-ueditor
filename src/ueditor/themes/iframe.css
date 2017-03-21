@@ -1,0 +1,43 @@
+/*可以在这里添加你自己的css*/
+img {
+  display: block;
+  max-width: 100%;
+  margin: 50px auto;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.08);
+}
+
+.pano {
+  border: 4px dashed #f00;
+}
+
+.poi {
+  border: 4px dashed #0f0;
+}
+
+.img-wrapper {
+  position: relative;
+}
+.img-wrapper img {
+  height: auto;
+}
+
+img.pano {
+  width: 750px;
+  height: 350px;
+}
+
+p {
+  font-size: 17px;
+  line-height: 32px;
+  color: #404040;
+  margin: 0 0 15px 0;
+}
+/*.img-wrapper:after {
+  position: absolute;
+  bottom: 18px;
+  left: 14px;
+  content: '图片';
+  font-size: 14px;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.75);
+}*/
