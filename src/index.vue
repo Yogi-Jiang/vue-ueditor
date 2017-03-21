@@ -1,18 +1,14 @@
 <template>
 	<div ref="editor"></div>
-	<vue-ueditor
-		config={config}
-	>
-	</vue-ueditor>
 </template>
 
 <script>
-  import 'ueditor/ueditor.config.js'
-  import 'ueditor/ueditor.all.js'
-  import 'ueditor/lang/zh-cn/zh-cn.js'
-  import 'ueditor/addInsertPanoDialog.js'
-  import 'ueditor/addInsertPoiButton.js'
-  import 'ueditor/plugins/autoupload.js'
+  import './ueditor/ueditor.config.js'
+  import './ueditor/ueditor.all.js'
+  import './ueditor/lang/zh-cn/zh-cn.js'
+  import './ueditor/addInsertPanoDialog.js'
+  import './ueditor/addInsertPoiButton.js'
+  import './ueditor/plugins/autoupload.js'
 
 	export default {
 		name: 'vue-ueditor',
