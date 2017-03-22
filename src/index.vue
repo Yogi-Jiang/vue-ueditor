@@ -20,6 +20,7 @@
         console.log('getUE', self.getUE)
        let id = new Date().getTime().toString()
        const editor = UE.getEditor(id, self.config)
+       console.log('editor', editor)
        self.$refs.editor.id = id
 			 self.getUE(editor)
 
