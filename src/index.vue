@@ -19,9 +19,9 @@
         console.log('config', self.config)
         console.log('getUE', self.getUE)
        let id = new Date().getTime().toString()
+       self.$refs.editor.id = id
        const editor = UE.getEditor(id, self.config)
        console.log('editor', editor)
-       self.$refs.editor.id = id
 			 self.getUE(editor)
 
        editor.ready(function () {
