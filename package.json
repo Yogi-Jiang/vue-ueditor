@@ -2,7 +2,7 @@
   "name": "vue-ueditor",
   "version": "1.0.0",
   "description": "vue editor component based on ueditor.",
-  "main": "./src/index.vue",
+  "main": "./src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "babel --presets es2015 -d lib/ src/",
