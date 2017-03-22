@@ -10,3 +10,5 @@ let config = {
       this.initEditor()
 		}
 	}
+
+export default config
